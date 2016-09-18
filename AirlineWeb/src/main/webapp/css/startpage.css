@@ -1,0 +1,55 @@
+@CHARSET "UTF-8";
+
+div#login{
+    display: inline-block;
+    border: 1px solid #77a;
+    background: #fafafa;
+    padding: 24px 16px 16px;
+    vertical-align: center;
+    margin: 45px auto 100px;
+    clear:both;
+}
+div.form-item{
+    display: block;
+    margin: 10px 0px;
+}
+
+div.inputname{
+    margin-right: 210px;
+    height: 40px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: left;
+    align: left;
+}
+div.input{
+    float: right;
+    width: 200px;
+    height: 40px;
+}
+div.submit{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+}
+input{
+    font-family: Helvetica,Arial,sans-serif;
+    width: 190px;
+    
+}
+input:focus{
+    background: #fafafa;
+}
+p.list-item{
+    padding: 3px 1px;
+    margin:0px;
+    font-family: Georgia, Times, serif;
+}
+p.list-item:hover{
+    background: #ddd;
+    padding: 3px 3px;
+    font-weight: 500;
+}
+h4{
+    margin: 0px auto 40px;
+}

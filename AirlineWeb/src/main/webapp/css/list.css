@@ -1,0 +1,47 @@
+@CHARSET "UTF-8";
+table.list {
+    border: 1px solid #999;
+    margin: auto;
+    padding: 0px;
+}
+button.listAction{
+  font-size: 1em;
+  margin: 10px 26px 6px;
+  padding: 6px;
+}
+button.listAction:hover{
+  color: Red;
+}
+tr {
+    margin:0px;
+    padding: 0px;
+}
+
+th {
+    margin: 0px;
+    border: 1px solid #eee;
+    padding: 7px 3px;
+}
+
+td {
+    margin: 0px;
+    font-size:95%;
+    font-family: Verdana,Geneva;
+}
+
+th.oddcolumn {
+    background: #fff9f0;
+}
+
+th.evencolumn {
+    background:#e5F3FA;
+}
+
+td.oddcolumn {
+    background: #ffe;
+}
+
+td.evencolumn {
+    background: #eee;
+}
+
