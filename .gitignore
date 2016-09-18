@@ -37,6 +37,13 @@ ehthumbs.db
 Thumbs.db
 *.bak
 
+#OTHER
+*.sh
+.gitignore
+.classpath
+.project
+*.swp
+
 # DIRECTORIES #
 /AirlineWeb/home/
 /AirlineWeb/target/
