@@ -31,5 +31,5 @@
     <button class="listAction" name="action" type="submit"
         value="DELETE_FLIGHT">Удалить</button>
     <button class="listAction" name="action" type="submit"
-        value="NEW_FLIGHT">Создать новый</button>
+        value="NEW_FLIGHT">Добавить</button>
 </form>

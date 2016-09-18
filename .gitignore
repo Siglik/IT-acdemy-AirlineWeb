@@ -39,9 +39,9 @@ Thumbs.db
 
 #OTHER
 *.sh
-.gitignore
-.classpath
-.project
+*.gitignore
+*.classpath
+*.project
 *.swp
 
 # DIRECTORIES #
