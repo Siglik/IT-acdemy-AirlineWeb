@@ -8,6 +8,7 @@ import java.sql.SQLException;
 import org.qqq175.it_academy.jd1.airline_web.logic.dao.UserDAOInterface;
 import org.qqq175.it_academy.jd1.airline_web.model.dto.User;
 import org.qqq175.it_academy.jd1.airline_web.util.exception.EntityNotFoundException;
+import org.qqq175.it_academy.jd1.airline_web.util.exception.UnsupportedOperation;
 
 public class UserDAO extends BasicDAO<User> implements UserDAOInterface {
 	private static String TABLE_NAME = "user";
@@ -30,8 +31,8 @@ public class UserDAO extends BasicDAO<User> implements UserDAOInterface {
 	}
 
 	@Override
-	protected void prepareWithEntity(PreparedStatement prepStatment, User entity) throws SQLException {
-		// TODO Auto-generated method stub
+	protected void prepareWithEntity(PreparedStatement prepStatment, User entity) throws SQLException, UnsupportedOperation {
+		throw new UnsupportedOperation();
 
 	}
 	

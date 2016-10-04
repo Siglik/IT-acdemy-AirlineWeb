@@ -42,12 +42,20 @@ p.error{
     font-weight: 800;
     color: red;
 }
+p.state{
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 100%;
+    font-style: italic;
+    font-weight: 800;
+    color: #696969;
+}
 nav.nav-bar{
     display: inline-block;
     border: 1px solid #77a;
     background: #fafafa;
     padding:4px 45px 4px;
     margin: 0px auto 16px;
+    clear:both;
 }
 nav.nav-bar form{
     display: inline;

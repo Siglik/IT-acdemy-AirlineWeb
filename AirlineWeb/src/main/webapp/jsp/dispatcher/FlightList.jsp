@@ -35,5 +35,5 @@
     </table>
     <br>
     <button class="listAction" name="action" type="submit"
-            value=SHOW_FLIGHT>Показать</button>
+            value=EDIT_FLIGHT_CREW>Показать/редактировать экипаж</button>
 </form>

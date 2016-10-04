@@ -10,7 +10,6 @@ import java.sql.SQLException;
 
 import org.qqq175.it_academy.jd1.airline_web.logic.dao.CityDAOInterface;
 import org.qqq175.it_academy.jd1.airline_web.model.dto.City;
-import org.qqq175.it_academy.jd1.airline_web.util.exception.EntityNotFoundException;
 
 /**
  * @author qqq175
@@ -46,7 +45,7 @@ public class CityDAO extends BasicDAO<City> implements CityDAOInterface{
 	}
 
 	@Override
-	public int getCityIdByPlaceId(String placeId) throws SQLException, EntityNotFoundException {
+	public int getCityIdByPlaceId(String placeId) throws SQLException {
 		try (PreparedStatement prepStatment = this.getConnection().prepareStatement(this.getSqlQuery().getQuery("sql.city.idByPlaceId"))) {
 			prepStatment.setString(1, placeId);
 			try (ResultSet resultSet = prepStatment.executeQuery()) {
@@ -55,8 +54,11 @@ public class CityDAO extends BasicDAO<City> implements CityDAOInterface{
 				}
 			}
 		}
+		//if nothing found return -1
 		return -1;
 	}
+	
+	
 //	public static void main(String [] args){
 //		try(Connection conn = DataSource.getInstance().getConnection()){
 //			CountryDAO contryDAO = new CountryDAO(conn);

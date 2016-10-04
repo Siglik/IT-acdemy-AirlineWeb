@@ -36,6 +36,30 @@ public class PlaceLogic {
 	public class Place {
 		City city;
 		Country country;
+		/**
+		 * @return the city
+		 */
+		public City getCity() {
+			return city;
+		}
+		/**
+		 * @param city the city to set
+		 */
+		public void setCity(City city) {
+			this.city = city;
+		}
+		/**
+		 * @return the country
+		 */
+		public Country getCountry() {
+			return country;
+		}
+		/**
+		 * @param country the country to set
+		 */
+		public void setCountry(Country country) {
+			this.country = country;
+		}
 	}
 
 	public Place getPlaceByPlaceId(String placeId, String language) throws GoogleApiException{
@@ -89,11 +113,5 @@ public class PlaceLogic {
 		}
 		
 		return "";
-	}
-	
-	public static void main(String [] arrgs) throws GoogleApiException{
-		PlaceLogic cl = new PlaceLogic();
-		Place place = cl.getPlaceByPlaceId("ChIJOwg_06VPwokRYv534QaPC8g", "ru");
-		System.out.println(cl.getCityURL(place.city));
 	}
 }

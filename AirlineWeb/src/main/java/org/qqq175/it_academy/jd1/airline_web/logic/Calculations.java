@@ -9,7 +9,7 @@ import org.qqq175.it_academy.jd1.airline_web.model.dto.City;
  * @author qqq175
  *
  */
-class Calculations {
+public class Calculations {
 	public static double EARTH_RADIUS = 6378137;
 	
 	public static double calcDistance(City from, City to){

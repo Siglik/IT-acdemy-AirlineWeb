@@ -65,8 +65,6 @@ public abstract class BasicDAO<T extends AbstractEntity> implements BasicDAOInte
 		query = insertTableName(query);
 		try (PreparedStatement prepStatment = connection.prepareStatement(query)) {
 			prepareWithId(prepStatment, id);
-			System.out.println(prepStatment);
-			System.out.println(query);
 			try (ResultSet resultSet = prepStatment.executeQuery()) {
 				return toDTO(resultSet);
 			}

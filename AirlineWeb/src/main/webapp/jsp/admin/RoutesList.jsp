@@ -2,7 +2,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <form method="post" action="">
-	<table id="flights" class="list">
+	<table id="routes" class="list">
 		<thead>
 			<tr class="tableheader">
 				<th class="oddcolumn">&nbsp;</th>
@@ -15,7 +15,7 @@
 		<tbody>
 			<c:forEach var="route" items="${routes}">
 				<tr>
-					<td class="oddcolumn"><input type="radio" name="flightId"
+					<td class="oddcolumn"><input type="radio" name="routeId"
 						value="${route.id}" checked></td>
 					<td class="evencolumn">${route.id}</td>
 					<td class="oddcolumn">${route.hub}</td>
@@ -27,9 +27,9 @@
 	</table>
 	<br>
 	<button class="listAction" name="action" type="submit"
-		value=SHOW_FLIGHT>Показать</button>
+		value=SHOW_ROUTE>Показать</button>
 	<button class="listAction" name="action" type="submit"
-		value="DELETE_FLIGHT">Удалить</button>
+		value="DELETE_ROUTE">Удалить</button>
 	<button class="listAction" name="action" type="submit"
-		value="NEW_FLIGHT">Создать новый</button>
+		value="NEW_ROUTE">Создать новый</button>
 </form>

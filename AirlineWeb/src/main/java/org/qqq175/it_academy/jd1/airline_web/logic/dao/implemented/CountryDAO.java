@@ -10,7 +10,6 @@ import java.sql.SQLException;
 
 import org.qqq175.it_academy.jd1.airline_web.logic.dao.CountryDAOInterface;
 import org.qqq175.it_academy.jd1.airline_web.model.dto.Country;
-import org.qqq175.it_academy.jd1.airline_web.util.exception.EntityNotFoundException;
 
 /**
  * @author qqq175
@@ -40,7 +39,7 @@ public class CountryDAO extends BasicDAO<Country> implements CountryDAOInterface
 	}
 
 	@Override
-	public int getCountryIdByShortName(String shortName) throws SQLException, EntityNotFoundException {
+	public int getCountryIdByShortName(String shortName) throws SQLException {
 		try (PreparedStatement prepStatment = this.getConnection().prepareStatement(this.getSqlQuery().getQuery("sql.country.idByShortName"))) {
 			prepStatment.setString(1, shortName);
 			try (ResultSet resultSet = prepStatment.executeQuery()) {
@@ -49,6 +48,7 @@ public class CountryDAO extends BasicDAO<Country> implements CountryDAOInterface
 				}
 			}
 		}
+		//if nothing found return -1
 		return -1;
 	}
 

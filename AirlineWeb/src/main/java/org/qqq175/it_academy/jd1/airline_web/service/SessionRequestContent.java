@@ -101,6 +101,12 @@ public class SessionRequestContent {
 	}
 
 	/**
+	 * @return the requestParameters
+	 */
+	public String[] getParameters(String name) {
+		return requestParameters.get(name);
+	}
+	/**
 	 * 
 	 */
 	public void setAttribute(String name, Object value) {

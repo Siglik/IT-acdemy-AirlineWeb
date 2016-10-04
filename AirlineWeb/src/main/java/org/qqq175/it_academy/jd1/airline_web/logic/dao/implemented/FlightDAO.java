@@ -114,4 +114,14 @@ public class FlightDAO extends BasicDAO<Flight> implements FlightDAOInterface {
 			}
 		}
 	}
+	
+	public int dismissFlightCrew(Flight flight) throws SQLException{
+		String query = sqlQuery.getQuery("sql.flight.dismisscrew");
+
+		try (PreparedStatement prepStatment = connection.prepareStatement(query)) {
+			prepStatment.setInt(1, flight.getId());
+
+			return prepStatment.executeUpdate();
+		}
+	}
 }

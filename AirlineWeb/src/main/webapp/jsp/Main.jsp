@@ -17,22 +17,14 @@
 		<h2 class="headTitle">Могилевские авиалинии</h2>
 	</div>
 	<div id="content">
+		<p class="state">${mainState}</p>
+		<script type="text/javascript">
+			var message = "${mainState}";
+			if (message.length > 0) {
+				alert(message);
+			}
+		</script>
 		<jsp:include page="${mainform}" />
-
-		<nav>
-			<p>Served at: ${serverAddr}</p>
-			<h3>Welcome to qqq175.org</h3>
-			<h5>
-				<a href='test'>test</a>
-			</h5>
-			<h5>
-				<a href='NewCityForm'>test city form</a>
-			</h5>
-			<form method="post" action="">
-				<input name="action" type="hidden" value="LOG_OUT" /> <input
-					class="submitLink" type="submit" value="На главную" />
-			</form>
-		</nav>
 	</div>
 	<div id="footer">
 		<div id="footer-content">

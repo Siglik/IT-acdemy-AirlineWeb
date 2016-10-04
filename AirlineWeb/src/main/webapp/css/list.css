@@ -8,25 +8,29 @@ button.listAction{
   font-size: 1em;
   margin: 10px 26px 6px;
   padding: 6px;
+  border-style: solid;
+  background: lightgray;
 }
 button.listAction:hover{
   color: Red;
+  background: lightgray;
 }
-tr {
+table.list tr {
     margin:0px;
     padding: 0px;
 }
 
-th {
+table.list th {
     margin: 0px;
     border: 1px solid #eee;
     padding: 7px 3px;
 }
 
-td {
+table.list td {
     margin: 0px;
     font-size:95%;
     font-family: Verdana,Geneva;
+    padding: 1px 10px 1px;
 }
 
 th.oddcolumn {
@@ -42,6 +46,24 @@ td.oddcolumn {
 }
 
 td.evencolumn {
-    background: #eee;
+    background: #e5e5e5;
+}
+nav.add-bar{
+    display: inline-block;
+    padding: 3px 12px;
+    border: 1px outset #999;
+    font-size: 0.8em;
+    clear: both;
+    margin: 10px;
+}
+nav.add-bar button.listAction{
+  margin: 10px 0px 6px 20px;
+  padding: 4px;
+  border-style: solid;
+  background: lightgray;
 }
 
+p.menu-name{
+    margin: 0px;
+    font-weight:700;
+}

@@ -7,6 +7,8 @@
             value=SHOW_FLIGHTS>Рейсы</button>
         <button class="submitLink" name="action" type="submit"
             value="SHOW_EMPLOYEES">Сотрудники</button>
+        <button class="submitLink" name="action" type="submit"
+            value="LOG_OUT">Выход</button>
     </form>
 </nav>
 <jsp:include page="${userpage}" />

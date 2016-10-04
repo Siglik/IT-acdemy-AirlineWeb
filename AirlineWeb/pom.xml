@@ -65,9 +65,9 @@
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
-					<compilerArguments>
+				<!--  	<compilerArguments>
 						<endorseddirs>${endorsed.dir}</endorseddirs>
-					</compilerArguments>
+					</compilerArguments>-->
 				</configuration>
 			</plugin>
 			<plugin>
